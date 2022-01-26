@@ -1,4 +1,7 @@
 import axios from "axios";
+import AllCoins from "./components/AllCoins";
+import Trending from "./components/Trending";
+
 
 export default function Home(props) {
   return (
@@ -12,12 +15,12 @@ export default function Home(props) {
         {/* left side bar - trending  */}
         <div className="w-[20rem] border-x-4 border-red-500">
           left sidebar
-          {props.trending[0].item.name}
+          <Trending trendingCoins={props.trending} />
         </div>
 
         {/* right - cards */}
         <div className="w-[40rem] border-x-4 border-purple-400 ml-20">
-          right
+          <AllCoins />
         </div>
         
       </main>
