@@ -1,6 +1,6 @@
+import axios from "axios";
 
-
-export default function Home() {
+export default function Home(props) {
   return (
     <div >
       <h1 className="text-3xl font-bold underline">
@@ -12,6 +12,7 @@ export default function Home() {
         {/* left side bar - trending  */}
         <div className="w-[20rem] border-x-4 border-red-500">
           left sidebar
+          {props.trending[0].item.name}
         </div>
 
         {/* right - cards */}
@@ -24,4 +25,27 @@ export default function Home() {
       
     </div>
   )
+}
+
+
+export async function getStaticProps() {
+
+  try {
+    var resTrending = await axios.get('https://api.coingecko.com/api/v3/search/trending');
+    var resCoins = await axios.get('https://api.coingecko.com/api/v3/coins/list?include_platform=false');
+    console.log(resCoins);
+  } catch (error) {
+    console.log(error);
+  }
+
+
+
+
+
+  // return a trending array and a regular array of coins
+  return {
+    props: {
+      trending: resTrending.data.coins,
+    },
+  }
 }
