@@ -5,7 +5,7 @@ import Trending from "./components/Trending";
 
 export default function Home(props) {
   return (
-    <div className="p-10">
+    <div className="p-10 flex items-center justify-center">
      
       
       {/* left side bar - trending  */}
