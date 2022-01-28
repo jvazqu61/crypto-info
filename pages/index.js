@@ -1,10 +1,12 @@
 import axios from "axios";
-import Trending from "./components/Trending";
+import MyHead from "../components/MyHead";
+import Trending from "../components/Trending";
 
 
 export default function Home(props) {
   return (
     <>
+      <MyHead  title={"Crypto Info | Trending..."} />
       <div className='flex items-center justify-center'>
         <h1  className="text-8xl font-medium text-gray-700 pt-12">Trending</h1>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

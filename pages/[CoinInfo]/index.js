@@ -1,5 +1,5 @@
 import axios from "axios";
-import CoinInfo from "../components/CoinInfo";
+import CoinInfo from "../../components/CoinInfo";
 
 export default function CoinInfoPage(props) {
   return (
