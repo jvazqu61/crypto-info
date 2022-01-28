@@ -39,9 +39,13 @@ export default function CoinInfo(props) {
                 <div className="ml-[5rem]  bd-gray hover:scale-105 transition duration-200 ease-out hover:text-black/100 bg-white font-semibold text-center  border shadow-sm  h-[600px] m-20 rounded-xl min-w-[500px] max-w-[1000px] items-center p-10">
                     
                     <h2 className="text-4xl"><u>Description</u></h2>
+<<<<<<< HEAD:components/CoinInfo.js
 
                     {/* dangerous to use, but text recieved from api includes html inside */}
                     <p dangerouslySetInnerHTML={{__html: props.description}} className="mt-[3.5rem] text-[24px] m-[auto] h-[400px] w-[80%] overflow-y-auto scrollbar-hide" />
+=======
+                    <div contentEditable={true} className="mt-[3.5rem] text-[24px] m-[auto] h-[200px] w-[600px]">{props.description}</div>
+>>>>>>> 594afd17ae288b720b9cd791424c57ed7eb2b4fc:pages/components/CoinInfo.js
                 </div>
               
               
