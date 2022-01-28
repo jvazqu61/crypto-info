@@ -19,7 +19,7 @@ export default function NavBar() {
   }
 
   return (
-<nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 min-w-[1000px] min-h-[70px]">
+<nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 min-w-[1000px] min-h-[70px]">
   <div className="container flex flex-wrap justify-between items-center mx-auto">
   <Link href='/'>
     <a href="#" className="flex">
