@@ -48,7 +48,7 @@ export default function CoinInfo(props) {
                 <div className="ml-[5rem] bd-gray hover:scale-105 transition duration-200 ease-out hover:text-black/100 bg-white font-semibold text-center  border shadow-sm max-w-[900px] h-[600px] m-20 rounded-xl w-[800px] items-center p-10">
                     
                     <h2 className="text-4xl"><u>Description</u></h2>
-                    <p className="mt-[3.5rem] text-[24px] m-[auto] h-[200px] w-[600px]">{props.description}</p>
+                    <div contentEditable={true} className="mt-[3.5rem] text-[24px] m-[auto] h-[200px] w-[600px]">{props.description}</div>
                 </div>
               
               
