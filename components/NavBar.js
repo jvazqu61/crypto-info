@@ -15,7 +15,7 @@ export default function NavBar() {
   
   const onSubmit = (data) => {
     console.log(data.coinName);
-    router.push(`/${data.coinName}`);
+    router.push(`/${data.coinName.toLowerCase()}`);
   }
 
   return (
